@@ -21,12 +21,6 @@
 
 	1. `~/.ssh/priv.pem` に鍵を設置する
 	2. `~/.ssh/config` に設定を設置する
-
-	```
-Host db1.atys.local db2.atys.local db3.atys.local
-	IdentityFile ~/.ssh/priv.pem
-```
-
 	3. このリポジトリをデプロイサーバに設置する
 
 1. Route53 に atys.local をプライベートDNSとして登録する
@@ -42,6 +36,13 @@ Host db1.atys.local db2.atys.local db3.atys.local
 1. 実行する
 	
 	1. `ansible-playbook -i hosts.ini db.yml`
+
+### `~/.ssh/config` ファイル設定例
+
+```
+Host db1.atys.local db2.atys.local db3.atys.local
+	IdentityFile ~/.ssh/priv.pem
+```
 
 # 設定の変更とか
 
