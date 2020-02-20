@@ -25,6 +25,7 @@
 
 1. Route53 に atys.local をプライベートDNSとして登録する
 
+	1. master は `172.31.20.128` で `group_vars/db.yml` でベタ打ちになってるので合わせたほうが良いっぽい
 	3. master のプライベートIP を `db1.atys.local` と対応させるようにする。
 	3. slave のプライベートIP を `db2.atys.local` と `db3.atys.local` と対応させるようにする。
 
