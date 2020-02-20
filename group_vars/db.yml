@@ -1,9 +1,9 @@
 mysql_user_name: root
-mysql_user_password: '%:Ah1*<u4A5V'
+mysql_user_password: 'まいえすきゅーえるのるーとゆーざのぱすわーど'
 mysql_replication_user:
   name: repl
   host: 172.31.0.0/255.255.0.0
-  password: '<v`M9//h?Uo0'
+  password: 'れぷりけーしょんするためのゆーざのぱすわーど'
 mysql_replication_master:
   host: 172.31.20.128
   port: 3306
